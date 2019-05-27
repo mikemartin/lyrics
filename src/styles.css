@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rabbit-lyrics__line {
+  @apply mb-2;
+
+  &--active {
+    @apply text-secondary-300 !important;
+    @apply text-4xl leading-none my-4;
+  }  
+}
+
+@screen md {
+  .rabbit-lyrics__line--active {
+    @apply text-6xl max-w-4xl mx-auto my-8;
+  }
+}
+
+.mic-on {
+  display: none;
+}
+
+.vocals-on {
+  @apply bg-secondary-300 text-black shadow-lg;
+
+  .mic-on {
+    display: block;
+  }
+
+  .mic-off {
+    display: none;
+  }
+}
