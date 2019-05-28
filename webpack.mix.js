@@ -1,13 +1,14 @@
 const mix = require('laravel-mix');
 const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['./*.html'],
+  content: ['./src/*.html'],
   whitelistPatternsChildren: [/rabbit-lyrics/],
   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
 });
 const buildHtml = require('mix-html-builder');
 
 
-mix.postCss('src/styles.css', 'dist', [
+mix.setPublicPath('dist')
+  .postCss('src/styles.css', 'dist', [
     require('postcss-nested'),
     require('tailwindcss'),
     require('autoprefixer'),
@@ -16,10 +17,12 @@ mix.postCss('src/styles.css', 'dist', [
         : []
   ])
   .js('src/scripts.js', 'dist')
+  .extract(['rabbit-lyrics'])
   .buildHtml({
     htmlRoot: 'src/index.html',
-    output: 'dist/index.html', // The html output file
-    partialRoot: 'src'    // OPTIONAL: default partial path
+    output: 'index.html',
+    partialRoot: 'src',
+    minify: false
   })
   .browserSync({
     proxy: false,
@@ -30,4 +33,3 @@ mix.postCss('src/styles.css', 'dist', [
       'src/*.html'
     ]
   });
-
