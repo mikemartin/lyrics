@@ -10,7 +10,7 @@
   },
   "git": { 
     "scripts": { 
-      "pre-push": "surge --project ./dist/ --domain whats-this.surge.sh" 
+      "pre-push": "surge --project ./dist/ --domain mrs-fan.surge.sh" 
     } 
   },
   "dependencies": {
