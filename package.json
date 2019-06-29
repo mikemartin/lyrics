@@ -8,6 +8,11 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "deploy": "surge dist/ -d whats-this.surge.sh"
   },
+  "git": { 
+    "scripts": { 
+      "pre-push": "surge --project ./dist/ --domain whats-this.surge.sh" 
+    } 
+  },
   "dependencies": {
     "rabbit-lyrics": "^1.1.2",
     "tailwindcss": "^1.0"
@@ -17,11 +22,13 @@
     "browser-sync": "^2.26.5",
     "browser-sync-webpack-plugin": "2.0.1",
     "cross-env": "^5.2.0",
+    "git-scripts": "^0.2.1",
     "laravel-mix": "^4.0.15",
     "mix-html-builder": "^0.3.0",
     "posthtml": "^0.11.4",
     "posthtml-include": "^1.2.0",
     "posthtml-loader": "^1.0.1",
+    "surge": "^0.21.3",
     "vue-template-compiler": "^2.6.10"
   }
 }
