@@ -8,10 +8,10 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "deploy": "surge dist/ -d whats-this.surge.sh"
   },
-  "git": { 
-    "scripts": { 
-      "pre-push": "surge --project ./dist/ --domain whats-this.surge.sh" 
-    } 
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./dist/ --domain whats-this.surge.sh"
+    }
   },
   "dependencies": {
     "rabbit-lyrics": "^1.1.2",

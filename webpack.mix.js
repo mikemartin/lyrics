@@ -21,9 +21,7 @@ mix.postCss('src/styles.css', 'dist', [
     htmlRoot: 'src/index.html',
     output: 'dist',
     partialRoot: 'src',
-    minify: {
-      collapseWhitespace: false
-    }
+    minify: false
   })
   .browserSync({
     proxy: false,
