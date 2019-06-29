@@ -18,7 +18,7 @@
     "browser-sync-webpack-plugin": "2.0.1",
     "cross-env": "^5.2.0",
     "laravel-mix": "^4.0.15",
-    "mix-html-builder": "git://github.com/mikemartin/mix-html-builder.git",
+    "mix-html-builder": "^0.3.0",
     "posthtml": "^0.11.4",
     "posthtml-include": "^1.2.0",
     "posthtml-loader": "^1.0.1",
