@@ -1,7 +1,9 @@
 import RabbitLyrics from "rabbit-lyrics";
 
-var audioPlayer = document.getElementById("music");
-var vocals = document.getElementById("vocals");
+const lyrics = document.getElementById("lyrics");
+const audioPlayer = document.getElementById("music");
+const vocals = document.getElementById("vocals");
+const lines = document.getElementsByClassName("rabbit-lyrics__line");
 
 vocals.addEventListener('click', function () {
   if (this.classList.contains("vocals-on")) {
@@ -15,6 +17,16 @@ vocals.addEventListener('click', function () {
 });
 
 new RabbitLyrics({
-  element: document.getElementById("lyrics"),
-  mediaElement: audioPlayer
+  element: lyrics,
+  mediaElement: audioPlayer,
 });
+
+setTimeout(function(){ 
+  for(var i = 0; i < lines.length; i++){
+    const line = lines.item(i)
+    const start = line.dataset.start;
+    line.addEventListener('click', function () {
+      audioPlayer.currentTime = start;
+    });
+  }
+}, 3000);

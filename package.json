@@ -5,13 +5,7 @@
     "watch": "npm run development -- --watch",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "deploy": "surge dist/ -d whats-this.surge.sh"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "surge --project ./dist/ --domain whats-this.surge.sh"
-    }
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
     "rabbit-lyrics": "^1.1.2",
@@ -28,7 +22,6 @@
     "posthtml": "^0.11.4",
     "posthtml-include": "^1.2.0",
     "posthtml-loader": "^1.0.1",
-    "surge": "^0.21.3",
     "vue-template-compiler": "^2.6.10"
   }
 }
