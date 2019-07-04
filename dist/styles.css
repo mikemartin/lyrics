@@ -4879,40 +4879,6 @@ video {
   z-index: auto;
 }
 
-@font-face {
-  font-family: 'Emilys Candy';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: url(/fonts/emilys-candy-v6-latin-regular.eot?830fd81b332792cf30158afb6b85ee21); /* IE9 Compat Modes */
-
-  src: local('Emilys Candy'), local('EmilysCandy-Regular'),
-       url(/fonts/emilys-candy-v6-latin-regular.eot?830fd81b332792cf30158afb6b85ee21?#iefix) format('embedded-opentype'), 
-       url(/fonts/emilys-candy-v6-latin-regular.woff2?7d3c6df36b106370d52330d6815d4ce3) format('woff2'), 
-       url(/fonts/emilys-candy-v6-latin-regular.woff?f127cc475bd844944ee10c19ee531e6a) format('woff'), 
-       url(/fonts/emilys-candy-v6-latin-regular.ttf?ea1022906acac6ba94f05d564ecb0591) format('truetype'), 
-       url(/fonts/emilys-candy-v6-latin-regular.svg?a88374f68bd9b96fd7a8296f00461315#EmilysCandy) format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Underdog';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: url(/fonts/underdog-v7-latin-regular.eot?5d4f237c6f6b201cdae7abc84787734d); /* IE9 Compat Modes */
-
-  src: local('Underdog'), local('Underdog-Regular'),
-       url(/fonts/underdog-v7-latin-regular.eot?5d4f237c6f6b201cdae7abc84787734d?#iefix) format('embedded-opentype'), 
-       url(/fonts/underdog-v7-latin-regular.woff2?917364d873d18266cf4689c9dc713c2f) format('woff2'), 
-       url(/fonts/underdog-v7-latin-regular.woff?abf744030c46a9e3515448f4f25d99cc) format('woff'), 
-       url(/fonts/underdog-v7-latin-regular.ttf?444fa837eddc93b93c1aa59b439ec8cc) format('truetype'), 
-       url(/fonts/underdog-v7-latin-regular.svg?1049e86112ff302c6a3c08ea7a081144#Underdog) format('svg'); /* Legacy iOS */
-}
-
 .rabbit-lyrics__line {
   margin-bottom: 0.5rem;
 }

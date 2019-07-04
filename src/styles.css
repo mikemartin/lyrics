@@ -2,32 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Emilys Candy';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/emilys-candy-v6-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Emilys Candy'), local('EmilysCandy-Regular'),
-       url('fonts/emilys-candy-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/emilys-candy-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/emilys-candy-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('fonts/emilys-candy-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/emilys-candy-v6-latin-regular.svg#EmilysCandy') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Underdog';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/underdog-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Underdog'), local('Underdog-Regular'),
-       url('fonts/underdog-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/underdog-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/underdog-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('fonts/underdog-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/underdog-v7-latin-regular.svg#Underdog') format('svg'); /* Legacy iOS */
-}
-
 .rabbit-lyrics__line {
   @apply mb-2;
 
