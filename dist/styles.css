@@ -4597,6 +4597,14 @@ video {
   display: none;
 }
 
+[data-start] {
+  cursor: pointer;
+}
+
+[data-start]:hover {
+  color: #000;
+}
+
 @media (min-width: 640px) {
   .sm\:appearance-none {
     -webkit-appearance: none;
