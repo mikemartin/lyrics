@@ -7,7 +7,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 const buildHtml = require('mix-html-builder');
 
 
-mix.postCss('src/styles.css', 'dist', [
+mix.setPublicPath('dist')
+  .postCss('src/styles.css', 'dist', [
     require('postcss-nested'),
     require('tailwindcss'),
     require('autoprefixer'),
@@ -19,7 +20,7 @@ mix.postCss('src/styles.css', 'dist', [
   .extract(['rabbit-lyrics'])
   .buildHtml({
     htmlRoot: 'src/index.html',
-    output: 'dist',
+    output: '',
     partialRoot: 'src',
     minify: false
   })

@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/dist/vendor"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/vendor"],{
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/rabbit-lyrics/src/index.css":
 /*!**********************************************************************************************************************************!*\

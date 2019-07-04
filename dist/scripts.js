@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/dist/scripts"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/scripts"],{
 
 /***/ "./src/scripts.js":
 /*!************************!*\
@@ -70,4 +70,4 @@ module.exports = __webpack_require__(/*! /Users/mike/Sites/lyrics/src/styles.css
 
 /***/ })
 
-},[[0,"/dist/manifest","/dist/vendor"]]]);
+},[[0,"/manifest","/vendor"]]]);
