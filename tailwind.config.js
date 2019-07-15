@@ -3,14 +3,13 @@ const { colors } = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     colors: {
-      'black': colors.black,
-      'primary': colors.indigo,
-      'secondary': colors.orange
+      'black': '#194025',
+      'primary': colors.green,
+      'secondary': colors.teal
     },
     fontFamily: {
       serif: [
-        'Emilys Candy', 
-        'Underdog',
+        'Bungee', 
         'sans-serif'
       ]
     },

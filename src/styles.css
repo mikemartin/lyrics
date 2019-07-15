@@ -6,7 +6,7 @@
   @apply mb-2;
 
   &--active {
-    @apply text-secondary-300 !important;
+    @apply text-secondary-200 !important;
     @apply text-4xl leading-none my-4;
   }  
 }
@@ -22,7 +22,7 @@
 }
 
 .vocals-on {
-  @apply bg-secondary-300 text-black shadow-lg;
+  @apply bg-secondary-200 text-black shadow-lg;
 
   .mic-on {
     display: block;
@@ -37,6 +37,6 @@
   cursor: pointer;
 
   &:hover {
-    @apply text-secondary-300;
+    @apply text-secondary-200;
   }
 }
