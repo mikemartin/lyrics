@@ -1,5 +1,5 @@
 ## Website
-https://whats-this.netlify.com
+https://bare-necessities.netlify.com
 
 ## Get started
 
