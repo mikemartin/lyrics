@@ -11,7 +11,7 @@ vocals.addEventListener('click', function () {
     audioPlayer.src = 'audio.mp3';
   } else {
     this.classList.add("vocals-on");
-    audioPlayer.src = 'audio-vocals.mp3';
+    audioPlayer.src = 'audio-vocals.m4a';
   }
   audioPlayer.play();
 });
