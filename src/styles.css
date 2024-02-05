@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-taylor {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
 .rabbit-lyrics__line {
   @apply mb-2;
 }
 
 .rabbit-lyrics__line--active {
-  @apply text-secondary !important;
-  @apply font-bold text-4xl leading-none my-4;
+  @apply text-primary-600 !important;
+  @apply font-bold text-4xl leading-none my-2;
 }
 
 
 @screen md {
   .rabbit-lyrics__line--active {
-    @apply text-6xl max-w-4xl mx-auto my-8;
+    @apply text-6xl max-w-4xl mx-auto my-4;
   }
 }
 
@@ -23,14 +27,18 @@
 }
 
 .vocals-on {
-  @apply bg-secondary text-primary-500 shadow-lg;
-
   .mic-on {
     display: block;
+    @apply text-primary-600;
   }
 
   .mic-off {
     display: none;
+    @apply text-secondary-500 text-opacity-50;
+
+    &:hover {
+      @apply text-opacity-75;
+    }
   }
 }
 
@@ -38,6 +46,6 @@
   cursor: pointer;
 
   &:hover {
-    @apply text-secondary;
+    @apply text-secondary-500 text-opacity-50;
   }
 }

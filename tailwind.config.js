@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     colors: {
       'primary': colors.pink,
-      'secondary': colors.black
+      'secondary': colors.teal
     },
     fontFamily: {
       display: [

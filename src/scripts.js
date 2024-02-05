@@ -2,7 +2,19 @@ import RabbitLyrics from "rabbit-lyrics";
 
 const lyrics = document.getElementById("lyrics");
 const audioPlayer = document.getElementById("music");
+const vocals = document.getElementById("vocals");
 const lines = document.getElementsByClassName("rabbit-lyrics__line");
+
+vocals.addEventListener('click', function () {
+  if (this.classList.contains("vocals-on")) {
+    this.classList.remove("vocals-on");
+    audioPlayer.src = './audio.mp3';
+  } else {
+    this.classList.add("vocals-on");
+    audioPlayer.src = './audio-vocals.mp3';
+  }
+  audioPlayer.play();
+});
 
 new RabbitLyrics({
   element: lyrics,
