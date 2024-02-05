@@ -7,9 +7,9 @@ module.exports = {
       'secondary': colors.black
     },
     fontFamily: {
-      sans: [
-        'Yeseva One', 
-        'sans-serif'
+      display: [
+        'Kalam', 
+        'cursive'
       ]
     },
   }

@@ -4,12 +4,13 @@
 
 .rabbit-lyrics__line {
   @apply mb-2;
-
-  &--active {
-    @apply text-secondary !important;
-    @apply font-black text-4xl leading-none my-4;
-  }
 }
+
+.rabbit-lyrics__line--active {
+  @apply text-secondary !important;
+  @apply font-bold text-4xl leading-none my-4;
+}
+
 
 @screen md {
   .rabbit-lyrics__line--active {

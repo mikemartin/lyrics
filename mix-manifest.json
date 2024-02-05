@@ -1,6 +1,5 @@
 {
     "/dist/manifest.js": "/dist/manifest.js",
     "/dist/scripts.js": "/dist/scripts.js",
-    "/dist/styles.css": "/dist/styles.css",
     "/dist/vendor.js": "/dist/vendor.js"
 }
